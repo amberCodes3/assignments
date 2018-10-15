@@ -25,3 +25,18 @@
 .label {
     margin: 10px;
 }
+
+#list {
+    flex-direction: column;
+    display: flex;
+}
+
+#list > li{
+    list-style-type: none;
+    margin: 10px auto;
+}
+
+#list div {
+    margin-bottom: 10px;
+    text-align: center;
+}
