@@ -8,6 +8,6 @@ Look for a `.git`
 
 If you find it, do an `rm -rf .git`
 
-do an npm install
+Do an `npm install`
 
 Use it as a springboard for your own Mom's shopping list app. The todos that are already in the HTML are there only to give an example of what the ones created in Part 1 should look like. Delete them from the HTML and make sure your code still works before moving on to Part 2.    
