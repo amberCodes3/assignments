@@ -1,0 +1,22 @@
+.blue{
+    display: inline-block;
+    height: 600px;
+    width: 300px;
+    background-color: #001489;
+    margin-top: 50px;
+    margin-left: 260px;
+}
+.white{
+    display: inline-block;
+    height: 600px;
+    width: 300px;
+    background-color:#FFFFFF;
+    margin-top: 50px;
+}
+.red{
+    display: inline-block;
+    background-color: #EF3340; 
+    height: 600px; 
+    width: 300px;
+    margin-top: 50px;
+}

@@ -1,0 +1,22 @@
+.black{
+    display:block;
+    background-color: black;
+    height: 200px;
+    width: 900px;
+    margin-top: 50px;
+    margin-left: 260px;
+}
+.red{
+    display: block;
+    background-color: red;
+    height: 200px;
+    width: 900px;
+    margin-left: 260px;
+}
+.yellow{
+    display: block;
+    background-color: gold;
+    height: 200px;
+    width: 900px;
+    margin-left: 260px;
+}
