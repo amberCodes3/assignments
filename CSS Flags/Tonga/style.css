@@ -1,0 +1,32 @@
+    .red{
+    background-color: rgb(193,0,0);
+    height: 500px;
+    width: 800px;
+    margin-left: 300px;
+    margin-top: 50px;
+}
+.white{
+    background-color: white;
+    height: 200px;
+    width: 300px;
+    top: 50px;
+    left: 308px;
+    position: absolute;
+}
+.red-vertical{
+    background-color: rgb(193,0,0);
+    height: 120px;
+    width: 40px;
+    top: 90px;
+    left: 425px;
+    position: absolute;
+
+}
+.red-horizontal{
+    background-color: rgb(193,0,0);
+    height: 40px;
+    width: 120px;
+    top: 130px;
+    left: 385px;
+    position: absolute;
+}
