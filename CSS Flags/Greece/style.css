@@ -1,0 +1,56 @@
+.blue{
+    background-color: rgb(27,94,175);
+    height: 430px;
+    width: 800px;
+    margin-top: 50px;
+    margin-left: 350px;
+}
+.white-horizontal1{
+    background-color: white;
+    height: 45px;
+    width: 569px;
+    position: absolute;
+    top: 95px;
+    left: 589px;
+}
+.white-horizontal2{
+    background-color: white;
+    height: 45px;
+    width: 569px;
+    position: absolute;
+    top: 186px;
+    left: 589px;
+}
+.white-horizontal3{
+    background-color: white;
+    height: 45px;
+    width: 800px;
+    position: absolute;
+    top: 280px;
+    left: 358px;
+}
+.white-horizontal4{
+    background-color: white;
+    height: 45px;
+    width: 800px;
+    position: absolute;
+    top: 380px;
+    left: 358px;
+}
+.white-horizontal5{
+    background-color: white;
+    height: 45px;
+    width: 230px;
+    top: 140px;
+    left: 358px;
+    position: absolute;
+
+}
+.white-vertical{
+    background-color: white;
+    height: 230px;
+    width: 45px;
+    position: absolute;
+    top: 50px;
+    left: 450px;
+}
