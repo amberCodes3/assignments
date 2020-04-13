@@ -16,11 +16,27 @@ img{
     justify-content: space-around;
     margin-bottom: 50px;
 }
+.menu1{
+    flex-direction: column;
+    border: 20px solid white;
+    display: inline-block;
+}
+.menu2{
+    flex-direction: column;
+    border: 20px solid white;
+    display: inline-block; 
+}
+.menu3{
+    flex-direction: column;
+    border: 20px solid white;
+    display: inline-block; 
+}
 .coffee{
     height: 400px;
     width: 25%;
     display: inline-block;
-    margin-left: 300px;
+    margin-left: 250px;
+    border:50px solid white;
 }
 .croissant{
    height: 400px;
@@ -28,6 +44,17 @@ img{
    display: inline-block;
    margin-left: 
 }
-@media only screen and(max-width: ;){
-
+p{
+    font-family: sans-serif;
+    font-size: 15px;
 }
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /* Styles */
+    }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* Styles */
+    }
