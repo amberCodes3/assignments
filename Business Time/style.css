@@ -1,0 +1,33 @@
+h1{
+    font-family: cursive;
+    font-size: 175px;
+    color: white;
+    position: absolute;
+    margin: 0;
+}
+img{
+    height: 300px;
+    width: 99%;
+    border: 5px solid white;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.coffee{
+    height: 400px;
+    width: 25%;
+    display: inline-block;
+    margin-left: 300px;
+}
+.croissant{
+   height: 400px;
+   width: 25%;
+   display: inline-block;
+   margin-left: 
+}
+@media only screen and(max-width: ;){
+
+}
