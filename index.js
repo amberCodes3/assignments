@@ -20,7 +20,6 @@ document.addItem.addEventListener("submit", function(e){
    xBtn.addEventListener('click', function() {
    newLi.innerHTML = " "
    })
-
 });
 
 /*Extra Credit
@@ -29,7 +28,3 @@ When the user clicks the "edit" button, a "save" button replace the "edit" butto
 The input box will automatically have the value of the list item
 The user can edit and "save" the input box's value
 On save, the input box will disappear, and the new value will appear*/
-
-
-
-
