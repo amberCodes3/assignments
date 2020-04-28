@@ -28,7 +28,6 @@ window.addEventListener("wheel", function(){
     myGrid.style.backgroundColor = "orange"
 });
 
-
 window.addEventListener("keydown", checkKeyPressed, false);
 
 function checkKeyPressed(event) {
