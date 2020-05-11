@@ -2,8 +2,6 @@ var readline = require('readline-sync');
 
 
 
-
-
 var str = readline.question('What phrase would you like to encrypt? ').toLowerCase();
 
 var amount = parseInt(readline.question('How many letters would you like to shift? '));
