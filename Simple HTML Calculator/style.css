@@ -1,0 +1,14 @@
+html, body{
+    margin: 190px;
+    padding-left: 35px;
+}
+
+
+#addDiv{
+    padding-bottom: 30px;
+    padding-left: 25px;
+}
+
+#subDiv{
+    padding-bottom: 30px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Form</title>
+</head>
+<body>
+    <h1>Worthy's Destination Airlines</h1>
+    <p>Please fill out the form below</p>
+    <form>
+        <input type="text" placeholder="First Name" name="firstName"/>
+        <br>
+        <input type="text" placeholder= "Last Name" name= "lastName"/>
+        <br>
+        <input type="number" placeholder="Age"/>
+        <br>
+        Male<input type="radio" name="male" value="Male"/>
+        Female<input type="radio" name="female" value="Female"/>
+        <br>
+        <select name="location">
+            <option value="New York">New York</option>
+            <option value="London">London</option>
+            <option value="Italy">Italy</option>
+        </select>
+        <br>
+       Vegetarian <input type="checkbox" name="diet" value="vegetarian"/>
+        <br>
+        Kosher<input type="checkbox" name="diet" value="kosher"/>
+        <br>
+        Peanut Allergy<input type="checkbox" name="diet" value="peanut allergy"/>
+        <button id="submit">Submit</button>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+<!--You should collect the following information from the user:
+
+First name (text input)
+Last name (text input)
+Age (number input)
+Gender (radio buttons with 2 or more options)
+Location they're traveling to (select box with at least 3 options. You're an airline that doesn't fly to many places...)
+Whether they have any dietary restrictions (check boxes for vegetarian, kosher, lactose free, etc. Include at least 3 options)
+
+Each element of the form should be given a name attribute so you can access the data in JavaScript and do stuff with it.
+
+There should also be a button at the end of the form to submit it. Upon pressing the button, an alert should pop up that looks like this:
+
+-->
