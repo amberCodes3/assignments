@@ -12,24 +12,34 @@
     <h2>Travel Inquiry Form</h2>
     <p>Please provide the following information below</p>
     <form class= "myForm" name= "myForm">
-        Name:<input type="text" placeholder="First Name" id= "firstName" name="firstName"/>
-        <input type="text" placeholder= "Last Name" id= "lastName" name= "lastName"/>
+        <div class="name"> Name:
+            <input type="text" placeholder="First Name" id= "firstName" name="firstName"/>
+            <input type="text" placeholder= "Last Name" id= "lastName" name= "lastName"/>
+        </div>
         <br>
-        Age:<input type="number" id= "age"/>
+        <div class="age"> Age:
+            <input type="number" id= "age"/>
+       </div>
         <br>
-        Male<input type="radio" id= "male" name="gender" value="Male"/>
-        Female<input type="radio" id= "female" name="gender" value="Female"/>
-        Other<input type="radio" id= "other" name="gender" value="Other"/>
+        <div class="gender">
+            Male<input type="radio" id= "male" name="gender" value="Male"/>
+            Female<input type="radio" id= "female" name="gender" value="Female"/>
+            Other<input type="radio" id= "other" name="gender" value="Other"/>
+        </div>
         <br>
-        Select Location<select name="location">
-            <option value="New York">New York</option>
-            <option value="London">London</option>
-            <option value="Italy">Italy</option>
-        </select>
+        <div class="location">Select Locations
+            <select name="location">
+                <option value="New York">New York</option>
+                <option value="London">London</option>
+                <option value="Italy">Italy</option>
+            </select>
+        </div>
         <br>
-       Dietary Options: Vegetarian <input type="checkbox" id= "veg" name="diet" value="Vegetarian"/>
-        Kosher<input type="checkbox" id= "kosher" name="diet" value="Kosher"/>
-        Peanut Allergy<input type="checkbox" id= "peanut" name="diet" value="Peanut Allergy"/>
+       <div class="diet"> Dietary Options:
+            Vegetarian <input type="checkbox" id= "veg" name="diet" value="Vegetarian"/>
+            Kosher<input type="checkbox" id= "kosher" name="diet" value="Kosher"/>
+            Peanut Allergy<input type="checkbox" id= "peanut" name="diet" value="Peanut Allergy"/>
+        </div>
         <br>
         <button id="submit">Submit</button>
     </form>
