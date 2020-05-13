@@ -9,7 +9,7 @@ const arr = [2, 5, 100];
 /*const doubleNumbers = arr.map(function(arr){
     return arr * 2
 });*/
-const doubleNumbers = arr.map(arr => arr * 2)
+const doubleNumbers = arr.map(arr => arr * 2);
 
  console.log(doubleNumbers);
 
@@ -21,7 +21,6 @@ const doubleNumbers = arr.map(arr => arr * 2)
 const stringItUp = arr.map(function(num){
     return arr.join(" ")
 }); 
-//const stringItUp = arr.map(arr => arr)
 
 console.log(stringItUp);
 
@@ -75,7 +74,7 @@ console.log(namesOnly);
 
 
 
-//5) Make an array of strings of the names saying whether or not they can go to The Matrix            *****
+//5) Make an array of strings of the names saying whether or not they can go to The Matrix
 // ["Angelina Jolie can go to The Matrix", 
 // "Eric Jones is under age!!", 
 // "Paris Hilton is under age!!", 
@@ -83,28 +82,30 @@ console.log(namesOnly);
 // "Bob Ziroll can go to The Matrix"]
 
 const makeStrings = people.map(function(y){
-    if(people.age > "18"){
-        console.log(`${people.name} can go to The Matrix`)
+    if(y.age > "18"){
+       return `${y.name} can go to The Matrix`
     } else{
-        console.log(`${people.name} is under age`)
+        return `${y.name} is under age!!`
     }
-    return y
 });
 
 console.log(makeStrings);
 
 
 
-//6) Make an array of the names in h1s, and the ages in h2s                        *****
+//6) Make an array of the names in h1s, and the ages in h2s                *****
 // ["<h1>Angelina Jolie</h1><h2>80</h2>", 
 // "<h1>Eric Jones</h1><h2>2</h2>", 
 // "<h1>Paris Hilton</h1><h2>5</h2>", 
 // "<h1>Kayne West</h1><h2>16</h2>", 
 // "<h1>Bob Ziroll</h1><h2>100</h2>"]
 
-function readyToPutInTheDOM(arr){
-  // your code here
-}
-console.log(readyToPutInTheDOM)
+const readyToPutInTheDOM = people.map(function(header){
+    if(header === "name"){
+        return `<h1>${header.name}</h1>`
+    }else if (header === "age"){
+        return `<h2>${header.age}</h2>`
+    }
+});
 
-
+console.log(readyToPutInTheDOM);
