@@ -15,24 +15,26 @@ const doubleNumbers = arr.map(arr => arr * 2);
 
 
 
-//2) Take an array of numbers and make them strings       *****
+//2) Take an array of numbers and make them strings
 // ["2", "5", "100"]
 
-const stringItUp = arr.map(function(num){
-    return arr.join(" ")
-}); 
+/*const stringItUp = arr.map(function(num){
+    return num
+});*/
 
-console.log(stringItUp);
+const stringItUp = arr.map(num => num)
+
+console.log(stringItUp.join(",").split(","));
 
 
 
 //3) Capitalize each of an array of names                  *****
 // ["John", "Jacob", "Jingleheimer", "Schmidt"]
 
-const names = ["john", "JACOB", "jinGleHeimer", "schmidt"]
+const names = ["john", "jacob", "jinGleHeimer", "schmidt"]
 
 const capitalizeNames = names.map(function(name){
-    return name.toUpperCase[0]
+    return name.charAt(0).toUpperCase() + name.slice(1)
 });
 
 console.log(capitalizeNames);
@@ -93,7 +95,7 @@ console.log(makeStrings);
 
 
 
-//6) Make an array of the names in h1s, and the ages in h2s                *****
+//6) Make an array of the names in h1s, and the ages in h2s          
 // ["<h1>Angelina Jolie</h1><h2>80</h2>", 
 // "<h1>Eric Jones</h1><h2>2</h2>", 
 // "<h1>Paris Hilton</h1><h2>5</h2>", 
@@ -101,11 +103,7 @@ console.log(makeStrings);
 // "<h1>Bob Ziroll</h1><h2>100</h2>"]
 
 const readyToPutInTheDOM = people.map(function(header){
-    if(header === "name"){
-        return `<h1>${header.name}</h1>`
-    }else if (header === "age"){
-        return `<h2>${header.age}</h2>`
-    }
-});
+  return `<h1>${header.name}</h1><h2>${header.age}</h2>`;
+})
 
 console.log(readyToPutInTheDOM);
