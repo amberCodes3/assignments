@@ -28,7 +28,7 @@ console.log(stringItUp.join(",").split(","));
 
 
 
-//3) Capitalize each of an array of names                  *****
+//3) Capitalize each of an array of names                  
 // ["John", "Jacob", "Jingleheimer", "Schmidt"]
 
 const names = ["john", "jacob", "jinGleHeimer", "schmidt"]
