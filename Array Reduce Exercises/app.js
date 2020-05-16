@@ -12,15 +12,14 @@ console.log(total);
 
 
 
-//2) Turn an array of numbers into a long string of all those numbers.                                *****
+//2) Turn an array of numbers into a long string of all those numbers.
 // => "123"
 
 const  stringConcat = arr.reduce(function(final, num){
-    final + num
-    return final
+    return final + num
 },"");
 
-console.log(stringConcat); 
+console.log(stringConcat.split(" ")); 
 
 
 
@@ -87,38 +86,3 @@ const flatten = arrays.reduce(function(final, arr){
 });
 
 console.log(flatten); 
-
-
-
-//6) Given an array of potential voters, return an object representing the results of the vote
-/* Returned value shown below:
-{ youngVotes: 1,
-  youth: 4,
-  midVotes: 3,
-  mids: 4,
-  oldVotes: 3,
-  olds: 4 
-}
-*/
-//Include how many of the potential voters were in the ages 18-25, how many from 26-35, how many from 36-55, and how many of each of those age ranges actually voted. The resulting object containing this data should have 6 properties. See the example output at the bottom.
-
-var voters = [
-    {name:'Bob' , age: 30, voted: true},
-    {name:'Jake' , age: 32, voted: true},
-    {name:'Kate' , age: 25, voted: false},
-    {name:'Sam' , age: 20, voted: false},
-    {name:'Phil' , age: 21, voted: true},
-    {name:'Ed' , age:55, voted:true},
-    {name:'Tami' , age: 54, voted:true},
-    {name: 'Mary', age: 31, voted: false},
-    {name: 'Becky', age: 43, voted: false},
-    {name: 'Joey', age: 41, voted: true},
-    {name: 'Jeff', age: 30, voted: true},
-    {name: 'Zack', age: 19, voted: false}
-];
-
-const voterResults = voters.reduce(function(final, vote){
-
-});
-
-console.log(voterResults);
