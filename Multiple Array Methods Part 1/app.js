@@ -55,11 +55,17 @@ function sortedOfAge(arr){
         if( num.age >=18){
             return num
         }
-    }) .map(function(list){
+    }).sort(function(a,b){
+        if(a.lastName > b.lastName){
+            return 1
+        } else if (a.lastName < b.lastName){
+            return -1
+        } else {
+            return 0
+        }
+    }).map(function(list){
         return `<li> ${list.firstName} ${list.lastName} is ${list.age} </li>`
-    }) .sort()
+    }) 
 };
 
 console.log(sortedOfAge(peopleArray));
-
-
