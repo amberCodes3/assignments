@@ -1,0 +1,108 @@
+
+ html body {
+    margin-left: 300px;
+    margin-top: 50px;
+    padding: 0;
+}
+
+#container {
+    width: 200px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 15px;
+    background-color:rgb(202, 184, 184);
+    border: 2x solid black;
+}
+
+.block1 {
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    width: 200px;
+    transition-duration: 1s;
+}
+
+.block2 {
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    transition-duration: 1s;
+}
+
+.block3 {
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    transition-duration: 1s;
+}
+
+.block4 {
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    transition-duration: 1s;
+}
+
+.block5 {
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    transition-duration: 1s;
+}
+
+.block6 {
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    transition-duration: 1s;
+}
+
+
+.block1:hover {
+    background-color: cyan;
+}
+
+.block2:hover{
+    border-radius: 10%;
+    background-color: salmon;
+}
+
+.block3:hover{
+  height: 300px;
+  width: 300px;
+  background-color: springgreen;
+}
+
+.block4:hover{
+    border: 2px solid red;
+    background-color: grey;
+}
+
+.block5:hover{
+    background-color: firebrick;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+}
+
+.block6:hover{
+    box-shadow: 10px 5px 5px red;
+    background-color: grey;
+    text-align: centergit ;
+    
+}
+
+
+
