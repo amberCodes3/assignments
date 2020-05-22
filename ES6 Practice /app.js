@@ -38,11 +38,11 @@ const carrots = ["bright orange", "ripe", "rotten"]
 //     })
 // };
 
-// function mapVegetables(arr) {
-//     return arr.map(carrot => )
-// }
+function mapVegetables(arr) {
+    return arr.map(carrot => ({ type: "carrot", name: carrot }))
+};
 
-// console.log(mapVegetables(carrots)); 
+console.log(mapVegetables(carrots)); 
 
 
 
@@ -83,6 +83,7 @@ console.log(filterForFriendly(people));
 
 
 // 3. Re-write the following functions to be arrow functions:
+
 // =>
 // function doMathSum(a, b) {
 //     return a + b
@@ -150,15 +151,19 @@ const animals = [
         name: "sparky"
     }
  ];
- 
- function filterForDogs(arr) {
-     return arr.filter(animal => {
-         if (animal.type === "dog") {
-             return true
-         } else {
-             return false
-         }
-     })
- };
 
- console.log(filterForDogs(animals));
+//=> 
+//  function filterForDogs(arr) {
+//      return arr.filter(animal => {
+//          if (animal.type === "dog") {
+//              return true
+//          } else {
+//              return false
+//          }
+//      })
+//  };
+
+function filterForDogs(arr){
+    return arr.filter(animal => animal.type === "dog", true, false)
+}
+console.log(filterForDogs(animals));
