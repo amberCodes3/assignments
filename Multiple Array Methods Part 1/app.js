@@ -51,8 +51,8 @@ var peopleArray = [
 ];    
 
 function sortedOfAge(arr){
-    return peopleArray.filter(function(num){
-        if( num.age >=18){
+    return arr.filter(function(num){
+        if( num.age >= 18){
             return num
         }
     }).sort(function(a,b){
