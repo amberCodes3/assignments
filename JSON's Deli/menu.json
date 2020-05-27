@@ -1,74 +1,76 @@
-{
-    "appetizers" : [
-        {
-            "name": ["Chicken Noodle Soup"], 
-            "ingredients": ["Chicken", "Golden Noodles", "Chopped Carrots", "Chopped Celery", "Salt", "Pepper"],
-            "description":["Homemade Chicken Noodle Soup"]
-        }, 
-        {
-            "name": ["Caesar Salad"], 
-            "ingredients": ["Romaine Lettuce", "Parmesan cheese, shredded or shaved", "Crisp croutons", "Caesar salad dressing"],
-            "description":["Romaine lettuce and homemade croutons tossed with traditional Caesar dressing. Topped with freshly grated Parmesan cheese."]
-        }
-    ]
-},
+[
+    {
+        "appetizers" : [
+            {
+                "name": ["Chicken Noodle Soup"], 
+                "ingredients": ["Chicken", "Golden Noodles", "Chopped Carrots", "Chopped Celery", "Salt", "Pepper"],
+                "description":["Homemade Chicken Noodle Soup"]
+            }, 
+            {
+                "name": ["Caesar Salad"], 
+                "ingredients": ["Romaine Lettuce", "Parmesan cheese, shredded or shaved", "Crisp croutons", "Caesar salad dressing"],
+                "description":["Romaine lettuce and homemade croutons tossed with traditional Caesar dressing. Topped with freshly grated Parmesan cheese."]
+            }
+        ]
+    },
 
-{
-    "cold sandwiches": [
-        {
-            "name": ["Ham and Swiss"],
-            "ingredients": ["Sliced Ham", "Swiss Cheese", "Green Leaf Lettuce", "Tomato"], 
-            "description": ["Sweet Sliced Ham, Swiss Cheese, Green Leaf Lettuce, Tomato & Deli Mustard on your choice od=f bread"]
-        },
-        {
-            "name": ["BLT"], 
-            "ingrediants":["Bacon", "Lettuce", "Tomato"],
-            "description":["Thich Cut Sliced Bacon with Mayonnaise and your choice of bread"]
-        }
-    ]
-}, 
+    {
+        "cold sandwiches": [
+            {
+                "name": ["Ham and Swiss"],
+                "ingredients": ["Sliced Ham", "Swiss Cheese", "Green Leaf Lettuce", "Tomato"], 
+                "description": ["Sweet Sliced Ham, Swiss Cheese, Green Leaf Lettuce, Tomato & Deli Mustard on your choice od=f bread"]
+            },
+            {
+                "name": ["BLT"], 
+                "ingrediants":["Bacon", "Lettuce", "Tomato"],
+                "description":["Thich Cut Sliced Bacon with Mayonnaise and your choice of bread"]
+            }
+        ]
+    }, 
 
-{
-    "hot sandwiches":[
-        {
-            "name": ["Hot Italian Sandwich"],
-            "ingrediants":["Sliced Salami", "Large, Thinly Sliced Pepperoni", " Sliced Ham", "Thin Sliced Mozzarella", "Dry Italian Seasoning"], 
-            "description":["Hot Italian Sandwiches baked in the oven. ayers of pepperoni, salami, ham, and mozzarella tucked into a sandwich roll that has been buttered and seasoned. "]
-        },
-        {
-            "name": "Philly Cheesesteak Sandwich",
-            "ingrediants":["Grilled Beef", "Green Peppers",  "Mushrooms", "Provolone Cheese"],
-            "description":["Freshly Grilled Beef all toasted on a soft hoagi roll"]
-        }
-    ]
-}, 
+    {
+        "hot sandwiches":[
+            {
+                "name": ["Hot Italian Sandwich"],
+                "ingrediants":["Sliced Salami", "Large, Thinly Sliced Pepperoni", " Sliced Ham", "Thin Sliced Mozzarella", "Dry Italian Seasoning"], 
+                "description":["Hot Italian Sandwiches baked in the oven. ayers of pepperoni, salami, ham, and mozzarella tucked into a sandwich roll that has been buttered and seasoned. "]
+            },
+            {
+                "name": "Philly Cheesesteak Sandwich",
+                "ingrediants":["Grilled Beef", "Green Peppers",  "Mushrooms", "Provolone Cheese"],
+                "description":["Freshly Grilled Beef all toasted on a soft hoagi roll"]
+            }
+        ]
+    }, 
 
-{
-    "desserts": [
-        {
-            "name": ["Chocolate Chip Cookies"],
-            "ingrediants":["Butter", "Sugar", "Vanilla Extract", "Baking Soda", "Salt", "Chocolate Chips"],
-            "description":["Handmade, Warm, Crisp edges, and chewy middles."]
-        }, 
-        {
-            "name": ["Brownie"],
-            "ingrediants":["Butter", "Sugar", "Salt", "All Purpose flour", "Baking Powder", "Coco Powder", "Vanilla Extract"],
-            "description":["Handmade, Freshly Baked Brownies"]
-        }
-    ]
-},
+    {
+        "desserts": [
+            {
+                "name": ["Chocolate Chip Cookies"],
+                "ingrediants":["Butter", "Sugar", "Vanilla Extract", "Baking Soda", "Salt", "Chocolate Chips"],
+                "description":["Handmade, Warm, Crisp edges, and chewy middles."]
+            }, 
+            {
+                "name": ["Brownie"],
+                "ingrediants":["Butter", "Sugar", "Salt", "All Purpose flour", "Baking Powder", "Coco Powder", "Vanilla Extract"],
+                "description":["Handmade, Freshly Baked Brownies"]
+            }
+        ]
+    },
 
-{
-    "drinks":[
-        {
-            "name":["Sweet Iced Tea"],
-            "ingrediants":["Tea", "Sugar"],
-            "description":["Freshly Brewed Tea"]
-        }, 
-        {
-            "name":["lemonade"],
-            "ingrediants":["lemons", "sugar", "water"],
-            "description":["Ice Cold Lemonde"]
-        }
-    ]
-}
+    {
+        "drinks":[
+            {
+                "name":["Sweet Iced Tea"],
+                "ingrediants":["Tea", "Sugar"],
+                "description":["Freshly Brewed Tea"]
+            }, 
+            {
+                "name":["lemonade"],
+                "ingrediants":["lemons", "sugar", "water"],
+                "description":["Ice Cold Lemonde"]
+            }
+        ]
+    }
+]
