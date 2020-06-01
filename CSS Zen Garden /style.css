@@ -107,23 +107,19 @@
 @media (max-width: 900px){
     /* use this media query to help these two cells drop to the bottom when screens are smaller */
     .authors {
-        background-color: rgb(229,237,232);
-        grid-column: 3 / 4;
-        grid-row: 2 / 4;
-        color: rgb(50,80,80);
-        font-size: 20px;
-        font-family: 'Times New Roman', Times, serif;
+       grid-row: 10 / 11;
+       grid-column: 1 / 4;
     }
     
     .links {
-
+        grid-row: 11 /12 ;
+        grid-column: 1 / 4;
     }
     /* container could use some help so that it's children are full screen width */
     .container {
-        
+    
     }
 }
-
 
 
 
