@@ -21,3 +21,5 @@ let vacationSpots = [
       timeToGo: "Spring"
     }
   ]
+
+  export default vacationSpots
