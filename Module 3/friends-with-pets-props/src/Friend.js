@@ -4,13 +4,13 @@ import React from "react"
 import Pets from "./Pet"
 
 function Friend(props) {
-    const newPet = props.friend.pets.map(item => <Pets  pets ={item} />)
+    const pets = props.friend.pets.map(item => <Pets  pets ={item} />)
 
         return(
             <div>
                 <h2>Name: {props.friend.name}</h2>
                 <p>Age: {props.friend.age}</p>
-                <p>Pet: {newPet}</p>
+                <p>Pet: {pets}</p>
             </div>
         )
 }

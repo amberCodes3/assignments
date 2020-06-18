@@ -1,0 +1,10 @@
+.img{
+    height: 300px;
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row-reverse;
+
+}
