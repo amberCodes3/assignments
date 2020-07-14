@@ -27,7 +27,7 @@ class App extends React.Component {
         const text = this.state.targets.map((item, i) => <Person key = {i} {...item}/>)
         return (
             <div>
-                    {text}
+                {text}
             </div>
         )
     }
