@@ -1,48 +1,35 @@
 import React from "react"
+import List from "./List"
 
 class App extends React.Component {
     constructor() {
         super()
         this.state = {
             name: "",
-            submitName: []
+            names: []
         }
-        this.handleChange = this.handleChange.bind(this)
-        this.handleSubmit = this.handleSubmit.bind(this)
+        
     }
 
-    handleChange(event) {
+    handleChange = (event) => {
         const {name, value} = event.target
         this.setState({
             [name]: value
         })
     }
 
-    handleSubmit(event) {
+    handleSubmit = (event) => {
         event.preventDefault()
         this.setState(prevState => {
-            if(this.state.name !== ""){
-                return {
-                    submitName: [
-                        ...prevState.submitName,
-                        this.state.name
-                    ],
-                    name: ""
-                }
-            }else {
-                return {
-                    submitName: [
-                        ...prevState.submitName
-                    ]
-                }
+            return {
+                names: [...prevState.names, prevState.name]
             }
         })
     }
 
     render() {
-        // const results = this.submitName.map(
-        //     result => <li> {result} </li>
-        // )
+        const mappedNames = this.state.names.map((items,i) => <List key={i} {...items} />)
+        
         return (
             <form>
                 <input 
@@ -54,7 +41,7 @@ class App extends React.Component {
                 <h1>Your Name: {this.state.name}</h1>
                 <button onClick={this.handleSubmit}>Add Name</button>
                 <ul>
-                    {/* {result}  */}
+                    {mappedNames}
                 </ul>
             </form>
         )

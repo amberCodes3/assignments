@@ -11,7 +11,7 @@ class App extends React.Component {
 
     componentDidMount() {
         fetch("http://www.colr.org/json/colors/random/7")
-            .then(response => response.json())
+        .then(response => response.json())
             .then(data => { 
                 this.setState({ 
                     randomColor: data
