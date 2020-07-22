@@ -15,4 +15,4 @@ function Pet(props){
     )
 }
 
-export default Pet
+export default Pet 
