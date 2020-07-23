@@ -3,7 +3,7 @@ import React from 'react'
 function List(props) {
     return(
         <div>
-            {props.list}
+            {props.name}
         </div>
     )
 }

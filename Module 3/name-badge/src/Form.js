@@ -1,6 +1,7 @@
 import React from 'react'
 import Badge from './Badge'
 
+
 class Form extends React.Component {
     constructor() {
         super()
@@ -25,13 +26,14 @@ class Form extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
+        console.log("sunbmitted")
+        const {firstName, lastName, email, birth, phone, food, about } = this.state
         this.setState(prevState => {
             return {
-                
+                badges: [...prevState.badges, { firstName, lastName, email, birth, phone, food, about }]
             }
         })
     }
-
 
     render() {
         const mystyle= {
@@ -41,9 +43,11 @@ class Form extends React.Component {
             borderStyle:"solid"
         }
 
+        const updatedBadge = this.state.badges.map((item, i) => <Badge key={i} {...item} />)
+        
         return(
             <div>
-                <form style={{border : "3px solid", padding: "30px", margin:"50px 200px 500px 250px", borderRadius:"10px"}}>
+                <form onSubmit = {this.handleSubmit} style={{border: "3px solid", padding: "30px", margin: "50px 200px 500px 250px", borderRadius:"10px"}}>
                     <input 
                         type="text"
                         name="firstName"
@@ -112,9 +116,12 @@ class Form extends React.Component {
                         placeholder='Tell us about yourself'
                         onChange={this.handleChange}
                         style={mystyle}
+                        required
                     />
-                    <button onClick={this.handleSubmit}>Submit</button>
+                    <br/>
+                    <button>Submit</button>
                 </form>
+                <div>{updatedBadge}</div>
             </div>
         )
     }
