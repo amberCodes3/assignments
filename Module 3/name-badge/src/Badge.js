@@ -5,9 +5,9 @@ function Badge(props) {
 console.log(props)
 
     return (
-        <div>
+        <div style={{border: "3px solid", padding: "30px", margin: "50px 200px 100px 250px", borderRadius:"10px"}}>
            <div>
-                <h1>Badge:</h1>
+                <h1 style={{backgroundColor: "grey", color: "white", }}>Badge:</h1>
            </div>
            <div>
                 <p>Name:{props.firstName} {props.lastName}</p>
