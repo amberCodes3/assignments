@@ -2,18 +2,15 @@ import React, {useState, useContext} from 'react'
 import {ThemeContextConsumer} from './themeContext'
 
 function Form(props) {
+
     const {addThing} = useContext(ThemeContextConsumer)
-    const [img, setImg] = useState(props.img)
-    const [title, setTitle] = useState(props.title)
-    const [description, setDescription] = useState(props.description)
+    const [img, setImg] = useState("")
+    const [title, setTitle] = useState("")
+    const [description, setDescription] = useState("")
 
     const handleSubmit = event => {
         event.preventDefault()
         addThing({img, title, description})
-    }
-
-    const handleChange = event => {
-        event.preventDefault()
     }
 
     return(
@@ -21,9 +18,27 @@ function Form(props) {
             <form onSubmit={handleSubmit}>
                 <input 
                     type="text" 
-                    value= 
-                    onChange={handleChange} />
-                <button type="submit">Submit</button>
+                    name = "title"
+                    value= {title}
+                    placeholder = "Title"
+                    onChange= {e => setTitle(e.target.value)} 
+                />
+                <input
+                    type= "text"
+                    name= "image"
+                    value= {img}
+                    placeholder = "Image URL"
+                    onChange = {e => setImg(e.target.value)}
+                />
+                <input
+                    type= "text"
+                    name= "description"
+                    value= {description}
+                    placeholder = "Description"
+                    onChange = {e => setDescription(e.target.value)}
+                />
+                <br/>
+                <button>Submit</button>
             </form>
         </div>
     )
