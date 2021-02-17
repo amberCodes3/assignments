@@ -1,32 +1,21 @@
 import React, {Component} from 'react'
 import Form from './Form'
 import Lyrics from './Lyrics'
-import axios from 'axios'
+
+
 
 class Home extends Component {
     constructor() {
         super()
         this.state= {
             artist: "",
-            title: "",
-            lyrics: "",
-            toggle: false   
+            title: "" 
         }
     }
     
      handleSubmit = event => {
         event.preventDefault()
-        console.log("submitted")
-        axios.get(`https://api.lyrics.ovh/v1/${this.state.artist}/${this.state.title}`)
-            .then(res => {
-                this.setState(prevState => ({
-                    ...prevState,
-                    lyrics: res.data.lyrics,
-                    toggle: !prevState.toggle 
-                }))
-                console.log(res.data.lyrics)
-            })
-            .catch(err => console.log(err))
+        this.props.getLyrics(this.state.artist, this.state.title)
       }
 
       handleChange = event => {
@@ -37,25 +26,19 @@ class Home extends Component {
           }))
       }
 
-      handleToggler = () => {
-          this.setState(prevState => ({
-              toggle: !prevState.toggle
-          }))
-      }
-
     render() {
         return (
            <div>
                {
-                   !this.state.toggle ? 
+                   !this.props.toggle ? 
                    <Form 
                     handleChange={this.handleChange}
                     handleSubmit={this.handleSubmit}
                     {...this.state}/>
                     :
                     <Lyrics 
-                    lyrics={this.state.lyrics}
-                    handleToggler={this.handleToggler}/>
+                    lyrics={this.props.lyrics}
+                    handleToggler={this.props.handleToggler}/>
                 }
            </div>
         )
