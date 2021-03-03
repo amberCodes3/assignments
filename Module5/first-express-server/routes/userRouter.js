@@ -3,10 +3,10 @@ const userRouter = express.Router()
 const uuid  = require('uuid').v4
 
 const users = [
-    { name: "jane", age: 45, _id: uuid() },
-    { name: "dan", age: 37, _id: uuid() },
-    { name: "phil", age: 37, _id: uuid() },
-    { name: "john", age: 22, _id: uuid() }
+    { name: "Jane", age: 45, _id: uuid() },
+    { name: "Dan", age: 37, _id: uuid() },
+    { name: "Phil", age: 37, _id: uuid() },
+    { name: "John", age: 22, _id: uuid() }
 ]
 
 //GET ALL
