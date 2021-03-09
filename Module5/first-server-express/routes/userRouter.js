@@ -23,10 +23,10 @@ userRouter.get("/:userId", (req, res) => {
 
 //POST ONE
 userRouter.post("/", (req, res) => {
-    const newName = req.body
-    users.push(newName)
-    newName._id = uuid()
-    res.send(`Successfully added ${newName.name} and ${newName.age} to the database`)
+    const newUser = req.body
+    users.push(newUser)
+    newUser._id = uuid()
+    res.send(newUser)
 })
 
 //GET by Query
