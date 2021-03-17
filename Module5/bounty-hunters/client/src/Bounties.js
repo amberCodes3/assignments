@@ -2,7 +2,7 @@ import React, {useState}from 'react'
 import AddBountyForm from './AddBountyForm'
 
 function Bounties(props) {
-    const {firstName, lastName, amount, _id} = props
+    const {firstName, lastName, amount, type, _id} = props
     const [editToggler, setEditToggler] = useState(false)
 
     return (
@@ -11,6 +11,7 @@ function Bounties(props) {
                 <>
                     <h1>Name: {firstName} {lastName} </h1>
                     <p>Amount: {amount} </p>
+                    <p>Type: {type} </p>
                     <button 
                         className="delete-btn"
                         onClick={() => props.deleteBounty(_id)}>Delete
@@ -24,8 +25,10 @@ function Bounties(props) {
             :
                 <>
                     <AddBountyForm 
-                        name ={firstName}
+                        firstName ={firstName}
+                        lastName={lastName}
                         amount={amount}
+                        type={type}
                         _id={_id}
                         btnText="Submit Edit"
                         submit={props.editBounty}

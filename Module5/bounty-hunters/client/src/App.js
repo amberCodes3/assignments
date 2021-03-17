@@ -15,6 +15,7 @@ function App() {
     function addBounty (newBounty) {
         axios.post('/bounties', newBounty)
         .then(res => {
+            console.log(res.data)
             setBounties (prevBounties => [...prevBounties, res.data])
         })
         .catch(err => console.log(err))
@@ -50,7 +51,7 @@ function App() {
             bounties.map(bounty => 
                 <Bounties
                  {...bounty} 
-                 key= {bounty.id}
+                 key= {bounty._id}
                  deleteBounty={deleteBounty}
                  editBounty={editBounty}/>) 
             }

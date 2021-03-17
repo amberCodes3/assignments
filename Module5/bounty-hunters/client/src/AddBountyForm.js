@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 
 function AddBountyForm(props) {
-    const intInput = { firstName: props.firstName || "", lastName: props.lastName || "", amount: props.amount || ""}
+    const intInput = { firstName: props.firstName || "", lastName: props.lastName || "", amount: props.amount || "", type: props.type || "" }
     const [inputs, setInputs] = useState(intInput)
 
    function handleChange (e) {
@@ -38,6 +38,13 @@ function AddBountyForm(props) {
                 value= {inputs.amount} 
                 onChange= {handleChange} 
                 placeholder="Amount"
+            />
+            <input 
+                type= "text" 
+                name= "type" 
+                value= {inputs.type} 
+                onChange= {handleChange} 
+                placeholder="Type"
             />
             <button>{props.btnText}</button>
         </form>
