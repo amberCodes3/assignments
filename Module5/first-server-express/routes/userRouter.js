@@ -15,9 +15,13 @@ userRouter.get("/", (req, res) => {
 })
 
 //GET ONE Params
-userRouter.get("/:userId", (req, res) => {
+userRouter.get("/:userId", (req, res, next) => {
     const userId = req.params.userId
     const foundUser = users.find(user => user._id === userId)
+    if(!foundUser){
+        const error = new Error(`The user  with id ${userId} was not found`)
+       return next(error)
+    }
     res.send(foundUser)
 })
 
@@ -30,9 +34,13 @@ userRouter.post("/", (req, res) => {
 })
 
 //GET by Query
-userRouter.get("/find/name", (req, res) => {
+userRouter.get("/find/name", (req, res, next) => {
     const name = req.query.name
     console.log(name)
+    if(!name){
+        const error = new Error("You must provide a name")
+        return next(error)
+    }
     const filteredUsers = users.filter(user => user.name === name)
     res.send(filteredUsers)
 })

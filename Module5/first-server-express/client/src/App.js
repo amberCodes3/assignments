@@ -10,7 +10,7 @@ function App() {
     function getUsers() {
         axios.get('/users')
         .then(res => setUsers(res.data))
-        .catch(err => console.log(err))
+        .catch(err => console.log(err.response.data.errMsg))
     }
 
     function addUser(newUser) {
