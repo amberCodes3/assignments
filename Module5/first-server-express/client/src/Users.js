@@ -3,7 +3,7 @@ import AddUserForm from './AddUserForm'
 
 
 function Users(props) {
-    const { name, age, _id} = props
+    const { name, age, _id } = props
     const [editToggler, setEditToggler] = useState(false)
 
     return (
